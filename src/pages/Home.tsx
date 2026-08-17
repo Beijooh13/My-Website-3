@@ -1,9 +1,9 @@
 import { useEffect, useRef } from 'react'
 import photoBL from '@/imports/11032021_Photos_BL.jpg'
-import photoD from '@/imports/02122021_D.jpg'
+import hw1 from '@/imports/Holiday_World_1.jpg'
 import branson3 from '@/imports/Port_2025_Branson3.jpg'
-import mar3235 from '@/imports/MAR_3235.jpg'
-import pubGolf from '@/imports/Asta_Pub_Golf_April262025-03.jpg'
+import photoD from '@/imports/02122021_D.jpg'
+import codeGreen from '@/imports/1.jpg'
 
 
 interface HomeProps {
@@ -17,7 +17,7 @@ export default function Home({ navigate }: HomeProps) {
     const handleScroll = () => {
       if (heroRef.current) {
         const y = window.scrollY
-        heroRef.current.style.transform = `translateY(${y * 0.35}px)`
+        heroRef.current.style.transform = `translateY(${y * 0.35}px)`a
       }
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
@@ -100,117 +100,129 @@ export default function Home({ navigate }: HomeProps) {
             </button>
           </div>
 
-{/* Featured grid — 4 selected projects */}
-<div className="grid grid-cols-1 md:grid-cols-12 gap-4">
-  {/* Branson — large left */}
-  <div
-    className="md:col-span-7 img-zoom cursor-pointer group"
-    onClick={() => navigate('project', 'branson-magazine')}
-    style={{ backgroundColor: '#1a1a1a' }}
-  >
-    <div className="relative aspect-[4/5] md:aspect-auto md:h-[680px]">
-      <img
-        src={branson3}
-        alt="Explore Branson — magazine ad campaign"
-        className="w-full h-full object-cover"
-      />
-      <div
-        className="absolute inset-0 transition-all duration-500 group-hover:opacity-100"
-        style={{ backgroundColor: 'rgba(13,13,11,0.2)', opacity: 0 }}
-      />
-      <div className="absolute bottom-0 left-0 p-8">
-        <p className="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-2" style={{ fontFamily: 'var(--font-body)' }}>
-          Editorial · Print · 2024
-        </p>
-        <h3 className="text-white text-3xl leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
-          Explore Branson<br /><em>Magazine Campaign</em>
-        </h3>
-      </div>
-    </div>
-  </div>
+          {/* Featured grid — all 4 real projects */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+            {/* Code Green — large left */}
+            <div
+              className="md:col-span-7 img-zoom cursor-pointer group"
+              onClick={() => navigate('project', 'code-green')}
+              style={{ backgroundColor: '#0a1a12' }}
+            >
+              <div className="relative aspect-[4/5] md:aspect-auto md:h-[680px]">
+                <img
+                  src={codeGreen}
+                  alt="Code Green — IDE extension for sustainable software"
+                  className="w-full h-full object-cover"
+                />
+                <div
+                  className="absolute inset-0 transition-all duration-500 group-hover:opacity-100"
+                  style={{ backgroundColor: 'rgba(13,13,11,0.2)', opacity: 0 }}
+                />
+                <div className="absolute bottom-0 left-0 p-8">
+                  <p className="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-2" style={{ fontFamily: 'var(--font-body)' }}>
+                    Research · UX/UI · 2025
+                  </p>
+                  <h3 className="text-white text-3xl leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
+                    Code Green<br /><em>IDE Extension</em>
+                  </h3>
+                </div>
+              </div>
+            </div>
 
-  {/* Right column — Perfume Workshop + ASTA */}
-  <div className="md:col-span-5 flex flex-col gap-4">
-    <div
-      className="img-zoom cursor-pointer group flex-1"
-      onClick={() => navigate('project', 'perfume-events')}
-      style={{ backgroundColor: '#2a2a2a' }}
-    >
-      <div className="relative h-[320px] md:h-full" style={{ minHeight: '320px' }}>
-        <img
-          src={mar3235}
-          alt="Natural perfume workshop — HSRW"
-          className="w-full h-full object-cover object-center"
-        />
-        <div
-          className="absolute inset-0 transition-all duration-500 group-hover:opacity-100"
-          style={{ backgroundColor: 'rgba(13,13,11,0.2)', opacity: 0 }}
-        />
-        <div className="absolute bottom-0 left-0 p-6">
-          <p className="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-1" style={{ fontFamily: 'var(--font-body)' }}>
-            Experience Design · AStA HSRW
-          </p>
-          <h3 className="text-white text-xl" style={{ fontFamily: 'var(--font-display)' }}>
-            Perfume Workshops
-          </h3>
+            {/* Right column — portrait + Branson */}
+            <div className="md:col-span-5 flex flex-col gap-4">
+              <div
+                className="img-zoom cursor-pointer group flex-1"
+                onClick={() => navigate('project', 'portrait-photography')}
+                style={{ backgroundColor: '#2a2a2a' }}
+              >
+                <div className="relative h-[320px] md:h-full" style={{ minHeight: '320px' }}>
+                  <img
+                    src={photoD}
+                    alt="Portrait photography — Seoul studio series"
+                    className="w-full h-full object-cover object-top"
+                  />
+                  <div
+                    className="absolute inset-0 transition-all duration-500 group-hover:opacity-100"
+                    style={{ backgroundColor: 'rgba(13,13,11,0.2)', opacity: 0 }}
+                  />
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <p className="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-1" style={{ fontFamily: 'var(--font-body)' }}>
+                      Photography · 2021–2022
+                    </p>
+                    <h3 className="text-white text-xl" style={{ fontFamily: 'var(--font-display)' }}>
+                      Seoul Portrait Series
+                    </h3>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                className="img-zoom cursor-pointer group"
+                onClick={() => navigate('project', 'branson-magazine')}
+                style={{ backgroundColor: '#1a1a1a' }}
+              >
+                <div className="relative h-[280px]">
+                  <img
+                    src={branson3}
+                    alt="Explore Branson — magazine ad campaign"
+                    className="w-full h-full object-cover"
+                  />
+                  <div
+                    className="absolute inset-0 transition-all duration-500 group-hover:opacity-100"
+                    style={{ backgroundColor: 'rgba(13,13,11,0.2)', opacity: 0 }}
+                  />
+                  <div className="absolute bottom-0 left-0 p-6">
+                    <p className="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-1" style={{ fontFamily: 'var(--font-body)' }}>
+                      Editorial · Print · 2024
+                    </p>
+                    <h3 className="text-white text-xl" style={{ fontFamily: 'var(--font-display)' }}>
+                      Explore Branson Campaign
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Bottom full row — Holiday World */}
+            <div
+              className="md:col-span-12 img-zoom cursor-pointer group"
+              onClick={() => navigate('project', 'holiday-world')}
+              style={{ backgroundColor: '#6a85a7' }}
+            >
+              <div className="relative h-[300px]">
+                <img
+                  src={hw1}
+                  alt="Holiday World Apparel — Sunshine tee"
+                  className="w-full h-full object-cover object-center"
+                />
+                <div
+                  className="absolute inset-0 transition-all duration-500 group-hover:opacity-100"
+                  style={{ backgroundColor: 'rgba(13,13,11,0.2)', opacity: 0 }}
+                />
+                <div className="absolute bottom-0 left-0 p-8">
+                  <p className="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-2" style={{ fontFamily: 'var(--font-body)' }}>
+                    Apparel Design · Objects · 2025
+                  </p>
+                  <h3 className="text-white text-3xl leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
+                    Holiday World — <em>Apparel Collection</em>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-6 md:hidden">
+            <button
+              onClick={() => navigate('work')}
+              className="text-sm tracking-[0.12em] uppercase link-underline"
+              style={{ fontFamily: 'var(--font-body)', color: 'var(--color-ink)' }}
+            >
+              All projects
+            </button>
+          </div>
         </div>
-      </div>
-    </div>
-
-    <div
-      className="img-zoom cursor-pointer group"
-      onClick={() => navigate('project', 'asta-graphics')}
-      style={{ backgroundColor: '#1a2e1a' }}
-    >
-      <div className="relative h-[280px]">
-        <img
-          src={pubGolf}
-          alt="AStA HSRW — Event Graphics & PR"
-          className="w-full h-full object-cover"
-        />
-        <div
-          className="absolute inset-0 transition-all duration-500 group-hover:opacity-100"
-          style={{ backgroundColor: 'rgba(13,13,11,0.2)', opacity: 0 }}
-        />
-        <div className="absolute bottom-0 left-0 p-6">
-          <p className="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-1" style={{ fontFamily: 'var(--font-body)' }}>
-            Graphic Design · PR · AStA HSRW
-          </p>
-          <h3 className="text-white text-xl" style={{ fontFamily: 'var(--font-display)' }}>
-            Event Graphics & PR
-          </h3>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  {/* Bottom full row — Portrait & Street */}
-  <div
-    className="md:col-span-12 img-zoom cursor-pointer group"
-    onClick={() => navigate('project', 'portrait-photography')}
-    style={{ backgroundColor: '#2a2a2a' }}
-  >
-    <div className="relative h-[300px]">
-      <img
-        src={photoD}
-        alt="Portrait & Street — Seoul photography series"
-        className="w-full h-full object-cover object-center"
-      />
-      <div
-        className="absolute inset-0 transition-all duration-500 group-hover:opacity-100"
-        style={{ backgroundColor: 'rgba(13,13,11,0.2)', opacity: 0 }}
-      />
-      <div className="absolute bottom-0 left-0 p-8">
-        <p className="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-2" style={{ fontFamily: 'var(--font-body)' }}>
-          Photography · 2021–2022
-        </p>
-        <h3 className="text-white text-3xl leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
-          Portrait & <em>Street</em>
-        </h3>
-      </div>
-    </div>
-  </div>
-</div>
+      </section>
 
       {/* Philosophy — dark ink section */}
       <section className="py-24 px-8 md:px-16" style={{ backgroundColor: 'var(--color-ink)' }}>
