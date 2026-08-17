@@ -224,38 +224,6 @@ export default function BransonProject({ navigate }: Props) {
         </div>
       </section>
 
-      {/* ── Process screenshots ── */}
-      <section className="py-20 px-8 md:px-16" style={{ backgroundColor: 'var(--color-ink)' }}>
-        <div className="max-w-screen-xl mx-auto">
-          <div className="flex items-baseline gap-6 mb-12">
-            <span className="text-[10px] tracking-[0.3em] uppercase" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>
-              Process
-            </span>
-            <h3 className="text-2xl md:text-3xl text-white" style={{ fontFamily: 'var(--font-display)' }}>
-              Design in progress — column grid visible
-            </h3>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            <div className="img-zoom" style={{ backgroundColor: '#1a1a1a' }}>
-              <img
-                src={process1}
-                alt="Branson magazine ad — design process, column guides visible, blue collage direction"
-                className="w-full object-cover"
-              />
-            </div>
-            <div className="img-zoom" style={{ backgroundColor: '#1a1a1a' }}>
-              <img
-                src={process2}
-                alt="Branson magazine ad — design process, alternative collage layout iteration"
-                className="w-full object-cover"
-              />
-            </div>
-          </div>
-          <p className="text-white/40 text-sm leading-relaxed max-w-2xl" style={{ fontFamily: 'var(--font-body)' }}>
-            Working files with InDesign column guides visible — the blue collage direction at two different stages of composition. The grid structure underneath enforces the proportions that make the final ad hold together on the printed page.
-          </p>
-        </div>
-      </section>
 
       {/* Body copy — the actual ad text, treated as a design artifact */}
       <section className="py-24 px-8 md:px-16" style={{ backgroundColor: 'var(--color-paper-dark)' }}>
