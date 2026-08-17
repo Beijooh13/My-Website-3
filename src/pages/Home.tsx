@@ -17,7 +17,7 @@ export default function Home({ navigate }: HomeProps) {
     const handleScroll = () => {
       if (heroRef.current) {
         const y = window.scrollY
-        heroRef.current.style.transform = `translateY(${y * 0.35}px)`a
+        heroRef.current.style.transform = `translateY(${y * 0.35}px)`
       }
     }
     window.addEventListener('scroll', handleScroll, { passive: true })
