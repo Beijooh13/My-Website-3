@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter, Routes, Route, useNavigate, useLocation } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useNavigate, useLocation, useParams } from 'react-router-dom'
 import Home from './pages/Home'
 import Work from './pages/Work'
 import Project from './pages/Project'
@@ -12,6 +12,17 @@ const navLinks = [
   { path: '/about', label: 'About' },
   { path: '/contact', label: 'Contact' },
 ]
+
+function ProjectRoute({ navigate }: { navigate: (path: string) => void }) {
+  const { projectId } = useParams<{ projectId: string }>()
+
+  if (!projectId) {
+    navigate('work')
+    return null
+  }
+
+  return <Project navigate={navigate} projectId={projectId} />
+}
 
 function Site() {
   const navigate = useNavigate()
@@ -119,22 +130,22 @@ function Site() {
       <main>
         <Routes>
           <Route path="/" element={<Home navigate={(path) => navigate(path === 'home' ? '/' : `/${path}`)} />} />
-          <Route path="/work" element={<Work
-  navigate={(path, project) =>
-    navigate(project ? `/${path}/${project}` : `/${path}`)
-  }
-/>} />
+          <Route
+            path="/work"
+            element={
+              <Work
+                navigate={(path, project) =>
+                  navigate(project ? `/${path}/${project}` : `/${path}`)
+                }
+              />
+            }
+          />
           <Route path="/about" element={<About navigate={(path) => navigate(`/${path}`)} />} />
           <Route path="/journal" element={<Journal />} />
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/project/:projectId"
-            element={
-              <Project
-                navigate={(path) => navigate(`/${path}`)}
-                projectId={location.pathname.split('/')[2]}
-              />
-            }
+            element={<ProjectRoute navigate={(path) => navigate(`/${path}`)} />}
           />
         </Routes>
       </main>
