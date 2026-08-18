@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import hw1 from '@/imports/Holiday_World_1.jpg'
 import portraitD from '@/imports/02122021_D.jpg'
 import branson3 from '@/imports/Port_2025_Branson3.jpg'
@@ -110,8 +111,9 @@ const projects: Project[] = [
 
 const localImgMap: Record<string, string> = { hw1, portraitD, branson3, codeGreen, essentia, perfume, landscape, zamoraSocial, podcast, astaThumb }
 
-export default function Work({ navigate }: WorkProps) {
+export default function Work({ navigate: _legacyNavigate }: WorkProps) {
   const [activeCategory, setActiveCategory] = useState('All')
+  const routerNavigate = useNavigate()
 
   const filtered =
     activeCategory === 'All'
@@ -174,7 +176,7 @@ export default function Work({ navigate }: WorkProps) {
                     gridRow: `span ${rowSpan}`,
                     backgroundColor: 'var(--color-paper-dark)',
                   }}
-                  onClick={() => navigate('project', project.id)}
+                  onClick={() => routerNavigate(`/project/${project.id}`)}
                 >
                   <img
                     src={localImgMap[project.localImg]}
