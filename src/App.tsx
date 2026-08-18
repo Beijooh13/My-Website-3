@@ -119,7 +119,11 @@ function Site() {
       <main>
         <Routes>
           <Route path="/" element={<Home navigate={(path) => navigate(path === 'home' ? '/' : `/${path}`)} />} />
-          <Route path="/work" element={<Work navigate={(path) => navigate(`/${path}`)} />} />
+          <Route path="/work" element={<Work
+  navigate={(path, project) =>
+    navigate(project ? `/${path}/${project}` : `/${path}`)
+  }
+/>} />
           <Route path="/about" element={<About navigate={(path) => navigate(`/${path}`)} />} />
           <Route path="/journal" element={<Journal />} />
           <Route path="/contact" element={<Contact />} />
