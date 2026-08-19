@@ -5,17 +5,17 @@
   --font-display: 'Fraunces', Georgia, serif;
   --font-body: 'DM Sans', system-ui, sans-serif;
   --color-ink: #17191c;
-  --color-paper: #f6f5f1;
-  --color-paper-dark: #ebe9e4;
-  --color-border: #d7d4ce;
-  --color-muted: #777874;
-  --color-sand: #aaa8a1;
+  --color-paper: #e8eaec;
+  --color-paper-dark: #d9dde0;
+  --color-border: #c4c9cd;
+  --color-muted: #697078;
+  --color-sand: #9da4aa;
 }
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-body); background-color: var(--color-paper); color: var(--color-ink); -webkit-font-smoothing: antialiased; }
 ::-webkit-scrollbar { width:4px; }
 ::-webkit-scrollbar-track { background:transparent; }
-::-webkit-scrollbar-thumb { background:#aaa8a1; border-radius:2px; opacity:0; }
+::-webkit-scrollbar-thumb { background:#9da4aa; border-radius:2px; opacity:0; }
 * { box-sizing:border-box; }
 @keyframes fadeUp { from {opacity:0;transform:translateY(24px)} to {opacity:1;transform:translateY(0)} }
 .page-enter { animation:fadeUp .6s cubic-bezier(.16,1,.3,1) both; }
