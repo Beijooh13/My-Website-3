@@ -26,18 +26,18 @@ export default function NgaProject({ navigate }: Props) {
       <div className="max-w-screen-xl mx-auto">
         <button onClick={()=>navigate('work')} className="text-xs tracking-[0.2em] uppercase mb-16 text-white/50">← Back to Work Index</button>
         <p className="text-xs tracking-[0.25em] uppercase mb-4 text-white/50">Fashion Photography · 2022</p>
-        <h1 className="text-6xl md:text-8xl leading-none text-white" style={{ fontFamily:'var(--font-display)' }}>NGA<br/><em>Fashion Photography</em></h1>
+        <h1 className="text-6xl md:text-8xl leading-none text-white" style={{ fontFamily:'var(--font-display)' }}>Nga<br/><em>Fashion Photography</em></h1>
       </div>
     </section>
 
     <section className="py-24 px-8 md:px-16">
       <div className="max-w-screen-xl mx-auto grid md:grid-cols-12 gap-16">
         <div className="md:col-span-4 space-y-5">
-          {[["Client","NGA"],["Role","Photographer"],["Field","Fashion"],["Year","2022"]].map(([a,b])=><div key={a} className="border-b pb-4" style={{ borderColor:'var(--color-border)' }}><p className="text-[10px] uppercase tracking-[0.2em]" style={{ color:'var(--color-muted)' }}>{a}</p><p className="text-sm">{b}</p></div>)}
+          {[["Client","Nga"],["Role","Photographer"],["Field","Fashion"],["Year","2022"]].map(([a,b])=><div key={a} className="border-b pb-4" style={{ borderColor:'var(--color-border)' }}><p className="text-[10px] uppercase tracking-[0.2em]" style={{ color:'var(--color-muted)' }}>{a}</p><p className="text-sm">{b}</p></div>)}
         </div>
         <div className="md:col-span-7 md:col-start-6">
           <h2 className="text-4xl md:text-5xl mb-8" style={{ fontFamily:'var(--font-display)' }}>Portrait and fashion photography created for a Vietnamese fashion entrepreneur.</h2>
-          <p className="leading-relaxed" style={{ color:'var(--color-muted)' }}>In 2022, NGA commissioned me to photograph her for her fashion work. The project focused on creating a varied set of portraits and fashion-oriented imagery that could support how she presented herself and her business visually.</p>
+          <p className="leading-relaxed" style={{ color:'var(--color-muted)' }}>In 2022, Nga commissioned me to photograph her for her fashion work. The project focused on creating a varied set of portraits and fashion-oriented imagery that could support how she presented herself and her business visually.</p>
         </div>
       </div>
     </section>
@@ -46,7 +46,7 @@ export default function NgaProject({ navigate }: Props) {
       <div className="max-w-screen-xl mx-auto">
         <p className="text-[10px] uppercase tracking-[0.3em] mb-3" style={{ color:'var(--color-muted)' }}>01 · Photography</p>
         <h3 className="text-3xl md:text-4xl mb-10" style={{ fontFamily:'var(--font-display)' }}>Selected Images</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">{images.map((src,i)=><img key={i} src={src} alt={`NGA fashion photography ${i+1}`} className="w-full h-auto" />)}</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">{images.map((src,i)=><img key={i} src={src} alt={`Nga fashion photography ${i+1}`} className="w-full h-auto" />)}</div>
       </div>
     </section>
   </article>
