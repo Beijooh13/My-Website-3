@@ -16,7 +16,7 @@ import klingerThumb from '@/imports/Klingerhuf Restoration Event_Reel_01.png'
 import rvnThumb from '@/imports/00001RVN Photos single_.jpg'
 import lunitThumb from '@/imports/Lunit9_15.jpg'
 import cyconThumb from '@/imports/CyconWP_Port_2025.jpg'
-import suitmakeThumb from '@/imports/IMG_3097.PNG'
+import suitmakeThumb from '@/imports/ Suitmake Product Photography_005.jpg'
 
 interface WorkProps { navigate: (page: string, project?: string) => void }
 const categories = ['All', 'Photography', 'Graphic Design', 'Editorial', 'Objects', 'Research / UX', 'UX/UI', 'Experience Design']
@@ -28,7 +28,7 @@ const projects: Project[] = [
   { id: 'lipco-souvenir-design', title: 'Lipco Group — Souvenir Product Design', year: '2024', category: 'Objects', localImg: 'hw1', size: 'wide' },
   { id: 'rvn-fashion-photography', title: 'RVN — Fashion Photography', year: 'c. 2020', category: 'Photography', localImg: 'rvnThumb', size: 'tall' },
   { id: 'lunit-ui-study', title: 'Lunit — Experimental UI Design Study', year: 'c. 2020', category: 'UX/UI', localImg: 'lunitThumb', size: 'wide' },
-  { id: 'suitmake', title: 'Suitmake — Social Media & Digital Design', year: '2019', category: 'Graphic Design', localImg: 'suitmakeThumb', size: 'tall' },
+  { id: 'suitmake', title: 'Suitmake — Photography & Digital Design', year: '2019', category: 'Graphic Design', localImg: 'suitmakeThumb', size: 'tall' },
   { id: 'conun-cycon', title: 'Cycon — White-Paper Design', year: 'c. 2019–2020', category: 'Graphic Design', localImg: 'cyconThumb', size: 'wide' },
   { id: 'code-green', title: 'Code Green', year: '2025', category: 'Research / UX', localImg: 'codeGreen', size: 'tall' },
   { id: 'branson-magazine', title: 'Explore Branson — Magazine Campaign', year: '2024', category: 'Editorial', localImg: 'branson3', size: 'wide' },
