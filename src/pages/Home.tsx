@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react'
 import photoBL from '@/imports/11032021_Photos_BL.jpg'
-import hw1 from '@/imports/Holiday_World_1.jpg'
+import lipcoShirt from '@/imports/Holiday_World_2.jpg'
 import branson3 from '@/imports/Port_2025_Branson3.jpg'
 import photoD from '@/imports/02122021_D.jpg'
 import codeGreen from '@/imports/1.jpg'
@@ -184,16 +184,16 @@ export default function Home({ navigate }: HomeProps) {
               </div>
             </div>
 
-            {/* Bottom full row — Holiday World */}
+            {/* Bottom full row — LIPCO Group */}
             <div
               className="md:col-span-12 img-zoom cursor-pointer group"
-              onClick={() => navigate('project', 'holiday-world')}
+              onClick={() => navigate('project', 'lipco-souvenir-design')}
               style={{ backgroundColor: '#6a85a7' }}
             >
               <div className="relative h-[300px]">
                 <img
-                  src={hw1}
-                  alt="Holiday World Apparel — Sunshine tee"
+                  src={lipcoShirt}
+                  alt="LIPCO Group souvenir shirt design"
                   className="w-full h-full object-cover object-center"
                 />
                 <div
@@ -202,10 +202,10 @@ export default function Home({ navigate }: HomeProps) {
                 />
                 <div className="absolute bottom-0 left-0 p-8">
                   <p className="text-white/70 text-[10px] tracking-[0.25em] uppercase mb-2" style={{ fontFamily: 'var(--font-body)' }}>
-                    Apparel Design · Objects · 2025
+                    Souvenir Design · Kirbyville, Missouri · 2024
                   </p>
                   <h3 className="text-white text-3xl leading-tight" style={{ fontFamily: 'var(--font-display)' }}>
-                    Holiday World — <em>Apparel Collection</em>
+                    LIPCO Group — <em>Souvenir Product Design</em>
                   </h3>
                 </div>
               </div>
