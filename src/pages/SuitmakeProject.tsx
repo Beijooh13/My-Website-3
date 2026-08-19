@@ -2,6 +2,7 @@ import social1 from '@/imports/IMG_3097.PNG'
 import social2 from '@/imports/IMG_3100 copy.PNG'
 import social3 from '@/imports/IMG_3101 copy.PNG'
 import social4 from '@/imports/IMG_3102 2.PNG'
+import social5 from '@/imports/IMG_3104 2.PNG'
 import social7 from '@/imports/IMG_3105 copy.PNG'
 import social8 from '@/imports/IMG_3106.PNG'
 import social9 from '@/imports/IMG_3107.PNG'
@@ -9,7 +10,7 @@ import social9 from '@/imports/IMG_3107.PNG'
 interface Props { navigate: (page: string) => void }
 
 export default function SuitmakeProject({ navigate }: Props) {
-  const images = [social1,social2,social3,social4,social7,social8,social9]
+  const images = [social1,social2,social3,social4,social5,social7,social8,social9]
   return <article className="page-enter">
     <section className="pt-36 pb-20 px-8 md:px-16" style={{backgroundColor:'var(--color-ink)'}}>
       <div className="max-w-screen-xl mx-auto">
