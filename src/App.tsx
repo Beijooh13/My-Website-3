@@ -6,6 +6,9 @@ import Project from './pages/Project'
 import About from './pages/About'
 import Journal from './pages/Journal'
 import Contact from './pages/Contact'
+import DancePhotographyProject from './pages/DancePhotographyProject'
+import UsabilityLabDocumentationProject from './pages/UsabilityLabDocumentationProject'
+import KlingerhufProject from './pages/KlingerhufProject'
 
 const navLinks = [
   { path: '/work', label: 'Work' },
@@ -74,6 +77,9 @@ function Site() {
           <Route path="/about" element={<About navigate={(path) => navigate(`/${path}`)} />} />
           <Route path="/journal" element={<Journal />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/project/dance-competition-photography" element={<DancePhotographyProject navigate={(path) => navigate(`/${path}`)} />} />
+          <Route path="/project/usability-lab-documentation" element={<UsabilityLabDocumentationProject navigate={(path) => navigate(`/${path}`)} />} />
+          <Route path="/project/klingerhuf-restoration" element={<KlingerhufProject navigate={(path) => navigate(`/${path}`)} />} />
           <Route path="/project/:projectId" element={<ProjectRoute navigate={(path) => navigate(`/${path}`)} />} />
         </Routes>
       </main>
