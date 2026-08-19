@@ -15,7 +15,8 @@ import labThumb from '@/imports/ Robotic Chess_Lab_001.jpg'
 import klingerThumb from '@/imports/Klingerhuf Restoration Event_Reel_01.png'
 import rvnThumb from '@/imports/00001RVN Photos single_.jpg'
 import lunitThumb from '@/imports/Lunit9_15.jpg'
-import conunThumb from '@/imports/CONUN_MGR-01.png'
+import cyconThumb from '@/imports/CyconWP_Port_2025.jpg'
+import suitmakeThumb from '@/imports/IMG_3097.PNG'
 
 interface WorkProps { navigate: (page: string, project?: string) => void }
 const categories = ['All', 'Photography', 'Graphic Design', 'Editorial', 'Objects', 'Research / UX', 'UX/UI', 'Experience Design']
@@ -27,7 +28,8 @@ const projects: Project[] = [
   { id: 'lipco-souvenir-design', title: 'Lipco Group — Souvenir Product Design', year: '2024', category: 'Objects', localImg: 'hw1', size: 'wide' },
   { id: 'rvn-fashion-photography', title: 'RVN — Fashion Photography', year: 'c. 2020', category: 'Photography', localImg: 'rvnThumb', size: 'tall' },
   { id: 'lunit-ui-study', title: 'Lunit — Experimental UI Design Study', year: 'c. 2020', category: 'UX/UI', localImg: 'lunitThumb', size: 'wide' },
-  { id: 'conun-cycon', title: 'Conun + Cycon — UX/UI & Digital Design', year: 'c. 2019–2020', category: 'UX/UI', localImg: 'conunThumb', size: 'wide' },
+  { id: 'suitmake', title: 'Suitmake — Social Media & Digital Design', year: '2019', category: 'Graphic Design', localImg: 'suitmakeThumb', size: 'tall' },
+  { id: 'conun-cycon', title: 'Cycon — White-Paper Design', year: 'c. 2019–2020', category: 'Graphic Design', localImg: 'cyconThumb', size: 'wide' },
   { id: 'code-green', title: 'Code Green', year: '2025', category: 'Research / UX', localImg: 'codeGreen', size: 'tall' },
   { id: 'branson-magazine', title: 'Explore Branson — Magazine Campaign', year: '2024', category: 'Editorial', localImg: 'branson3', size: 'wide' },
   { id: 'portrait-photography', title: 'Portrait & Street Photography', year: '2021–2022', category: 'Photography', localImg: 'portraitD', size: 'tall' },
@@ -38,7 +40,7 @@ const projects: Project[] = [
   { id: 'podcast-event', title: 'Diogo Podcast — Event Photography', year: '2025', category: 'Photography', localImg: 'podcast', size: 'wide' },
   { id: 'asta-graphics', title: 'AStA HSRW — Visual Communication & Student Initiatives', year: '2025–2026', category: 'Graphic Design', localImg: 'astaThumb', size: 'tall' },
 ]
-const localImgMap: Record<string, string> = { hw1, portraitD, branson3, codeGreen, essentia, perfume, landscape, zamoraSocial, podcast, astaThumb, danceThumb, labThumb, klingerThumb, rvnThumb, lunitThumb, conunThumb }
+const localImgMap: Record<string, string> = { hw1, portraitD, branson3, codeGreen, essentia, perfume, landscape, zamoraSocial, podcast, astaThumb, danceThumb, labThumb, klingerThumb, rvnThumb, lunitThumb, cyconThumb, suitmakeThumb }
 export default function Work({ navigate: _legacyNavigate }: WorkProps) {
   const [activeCategory, setActiveCategory] = useState('All')
   const routerNavigate = useNavigate()
