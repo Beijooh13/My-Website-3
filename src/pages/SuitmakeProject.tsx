@@ -13,7 +13,6 @@ import product10 from '@/imports/ Suitmake Product Photography_010.jpg'
 import product11 from '@/imports/ Suitmake Product Photography_011.jpg'
 import product12 from '@/imports/ Suitmake Product Photography_012.jpg'
 import product13 from '@/imports/ Suitmake Product Photography_013.jpg'
-import product16 from '@/imports/ Suitmake Product Photography_016.jpg'
 import jen1 from '@/imports/ Jen Auh Photography_001.jpg'
 import jen2 from '@/imports/ Jen Auh Photography_002.jpg'
 import jen3 from '@/imports/ Jen Auh Photography_003.jpg'
@@ -33,7 +32,7 @@ const Gallery = ({ images, label }: { images: string[]; label: string }) => <div
 
 export default function SuitmakeProject({ navigate }: Props) {
   const socialImages = [social1,social2,social4,social9]
-  const productImages = [product1,product2,product5,product6,product7,product8,product9,product10,product11,product12,product13,product16]
+  const productImages = [product1,product2,product5,product6,product7,product8,product9,product10,product11,product12,product13]
   const jenImages = [jen1,jen2,jen3,jen4,jen5]
   const modelImages = [model1a,model1b,model1c,model1d,model2a,model2b,model3a,model3b]
   return <article className="page-enter">
