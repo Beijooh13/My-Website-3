@@ -13,6 +13,7 @@ import LipcoProject from './pages/LipcoProject'
 import RvnProject from './pages/RvnProject'
 import LunitStudyProject from './pages/LunitStudyProject'
 import ConunCyconProject from './pages/ConunCyconProject'
+import SuitmakeProject from './pages/SuitmakeProject'
 
 const navLinks = [
   { path: '/work', label: 'Work' },
@@ -54,6 +55,7 @@ function Site() {
       <Route path="/project/rvn-fashion-photography" element={<RvnProject navigate={(path) => navigate(`/${path}`)} />} />
       <Route path="/project/lunit-ui-study" element={<LunitStudyProject navigate={(path) => navigate(`/${path}`)} />} />
       <Route path="/project/conun-cycon" element={<ConunCyconProject navigate={(path) => navigate(`/${path}`)} />} />
+      <Route path="/project/suitmake" element={<SuitmakeProject navigate={(path) => navigate(`/${path}`)} />} />
       <Route path="/project/:projectId" element={<ProjectRoute navigate={(path) => navigate(`/${path}`)} />} />
     </Routes></main>
     {location.pathname !== '/' && <footer className="border-t py-10 px-8 md:px-16" style={{ borderColor:'var(--color-border)', backgroundColor:'var(--color-paper)' }}><div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6"><button onClick={()=>navigate('/')} className="text-sm tracking-[0.25em] uppercase" style={{fontFamily:'var(--font-body)', color:'var(--color-ink)'}}>Andrea Polk</button><div className="flex gap-8">{navLinks.map(({path,label})=><button key={path} onClick={()=>navigate(path)} className="text-xs tracking-[0.15em] uppercase" style={{fontFamily:'var(--font-body)', color:'var(--color-muted)'}}>{label}</button>)}</div><p className="text-xs" style={{fontFamily:'var(--font-body)', color:'var(--color-muted)'}}>© 2026 Andrea Polk Studio</p></div></footer>}
