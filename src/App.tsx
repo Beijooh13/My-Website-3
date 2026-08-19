@@ -9,6 +9,8 @@ import Contact from './pages/Contact'
 import DancePhotographyProject from './pages/DancePhotographyProject'
 import UsabilityLabDocumentationProject from './pages/UsabilityLabDocumentationProject'
 import KlingerhufProject from './pages/KlingerhufProject'
+import AstaVisualCommunicationProject from './pages/AstaVisualCommunicationProject'
+import LipcoProject from './pages/LipcoProject'
 
 const navLinks = [
   { path: '/work', label: 'Work' },
@@ -80,6 +82,8 @@ function Site() {
           <Route path="/project/dance-competition-photography" element={<DancePhotographyProject navigate={(path) => navigate(`/${path}`)} />} />
           <Route path="/project/usability-lab-documentation" element={<UsabilityLabDocumentationProject navigate={(path) => navigate(`/${path}`)} />} />
           <Route path="/project/klingerhuf-restoration" element={<KlingerhufProject navigate={(path) => navigate(`/${path}`)} />} />
+          <Route path="/project/asta-graphics" element={<AstaVisualCommunicationProject navigate={(path) => navigate(`/${path}`)} />} />
+          <Route path="/project/lipco-souvenir-design" element={<LipcoProject navigate={(path) => navigate(`/${path}`)} />} />
           <Route path="/project/:projectId" element={<ProjectRoute navigate={(path) => navigate(`/${path}`)} />} />
         </Routes>
       </main>
