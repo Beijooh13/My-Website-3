@@ -6,6 +6,7 @@ import Project from './pages/Project'
 import About from './pages/About'
 import Journal from './pages/Journal'
 import Contact from './pages/Contact'
+import DanceCompetitionProject from './pages/DanceCompetitionProject'
 
 const navLinks = [
   { path: '/work', label: 'Work' },
@@ -74,6 +75,7 @@ function Site() {
           <Route path="/about" element={<About navigate={(path) => navigate(`/${path}`)} />} />
           <Route path="/journal" element={<Journal />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/project/dance-competition-photography" element={<DanceCompetitionProject navigate={(path) => navigate(`/${path}`)} />} />
           <Route path="/project/:projectId" element={<ProjectRoute navigate={(path) => navigate(`/${path}`)} />} />
         </Routes>
       </main>
