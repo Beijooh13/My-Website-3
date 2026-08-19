@@ -27,7 +27,7 @@ const projects: Project[] = [
   { id: 'usability-lab-documentation', title: 'HSRW Usability Lab — Project Documentation', year: '2026', category: 'Photography', localImg: 'labThumb', size: 'tall' },
   { id: 'klingerhuf-restoration', title: 'Klingerhuf Restoration — Community Participation', year: '2026', category: 'Graphic Design', localImg: 'klingerThumb', size: 'wide' },
   { id: 'lipco-souvenir-design', title: 'Lipco Group — Souvenir Product Design', year: '2024', category: 'Objects', localImg: 'hw1', size: 'wide' },
-  { id: 'nga-fashion-photography', title: 'NGA — Fashion Photography', year: '2022', category: 'Photography', localImg: 'ngaThumb', size: 'tall' },
+  { id: 'nga-fashion-photography', title: 'Nga — Fashion Photography', year: '2022', category: 'Photography', localImg: 'ngaThumb', size: 'tall' },
   { id: 'rvn-fashion-photography', title: 'RVN — Fashion Photography', year: 'c. 2020', category: 'Photography', localImg: 'rvnThumb', size: 'tall' },
   { id: 'lunit-ui-study', title: 'Lunit — Experimental UI Design Study', year: 'c. 2020', category: 'UX/UI', localImg: 'lunitThumb', size: 'wide' },
   { id: 'suitmake', title: 'Suitmake — Photography & Digital Design', year: '2019', category: 'Graphic Design', localImg: 'suitmakeThumb', size: 'tall' },
