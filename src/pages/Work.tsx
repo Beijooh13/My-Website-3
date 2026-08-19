@@ -31,9 +31,9 @@ interface Project {
 
 const projects: Project[] = [
   {
-    id: 'holiday-world',
-    title: 'Holiday World — Apparel Collection',
-    year: '2025',
+    id: 'lipco-souvenir-design',
+    title: 'Lipco Group — Souvenir Product Design',
+    year: '2024',
     category: 'Objects',
     localImg: 'hw1',
     size: 'wide',
