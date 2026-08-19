@@ -12,15 +12,6 @@ const services = [
   'Content Strategy',
 ]
 
-const clients = [
-  'Holiday World', 'Hatch New Mexico', 'Waynesville Fall Festival',
-  '40 Mile Point Lighthouse', 'Independent Labels',
-]
-
-const awards = [
-  { year: '2025', body: 'M.Sc. Program', award: 'Usability Engineering — Hochschule Rhein-Waal University' },
-]
-
 const interests = [
   'Usability engineering and how people experience systems, spaces, and services',
   'Photography as a tool for understanding culture and place',
@@ -134,50 +125,6 @@ export default function About({ navigate }: AboutProps) {
                 ))}
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Education */}
-      <section className="py-20 px-8 md:px-16" style={{ backgroundColor: 'var(--color-paper-dark)' }}>
-        <div className="max-w-screen-xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-16">
-            <div className="md:col-span-3">
-              <p className="text-[10px] tracking-[0.3em] uppercase" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>
-                Education & Recognition
-              </p>
-            </div>
-            <div className="md:col-span-8">
-              {awards.map(({ year, body, award }) => (
-                <div key={award} className="border-b py-5 grid grid-cols-12 gap-4 items-baseline" style={{ borderColor: 'var(--color-border)' }}>
-                  <span className="col-span-2 text-xs" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>
-                    {year}
-                  </span>
-                  <span className="col-span-3 text-sm" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>
-                    {body}
-                  </span>
-                  <span className="col-span-7 text-base" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-ink)' }}>
-                    {award}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Selected clients */}
-      <section className="py-20 px-8 md:px-16">
-        <div className="max-w-screen-xl mx-auto">
-          <p className="text-[10px] tracking-[0.3em] uppercase mb-12" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>
-            Selected Clients & Collaborations
-          </p>
-          <div className="flex flex-wrap gap-x-12 gap-y-4">
-            {clients.map((client) => (
-              <span key={client} className="text-2xl md:text-3xl" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-ink)' }}>
-                {client}
-              </span>
-            ))}
           </div>
         </div>
       </section>
