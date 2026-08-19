@@ -7,6 +7,7 @@ import About from './pages/About'
 import Journal from './pages/Journal'
 import Contact from './pages/Contact'
 import DanceCompetitionProject from './pages/DanceCompetitionProject'
+import UsabilityLabProject from './pages/UsabilityLabProject'
 
 const navLinks = [
   { path: '/work', label: 'Work' },
@@ -16,12 +17,10 @@ const navLinks = [
 
 function ProjectRoute({ navigate }: { navigate: (path: string) => void }) {
   const { projectId } = useParams<{ projectId: string }>()
-
   if (!projectId) {
     navigate('work')
     return null
   }
-
   return <Project navigate={navigate} projectId={projectId} />
 }
 
@@ -76,6 +75,7 @@ function Site() {
           <Route path="/journal" element={<Journal />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/project/dance-competition-photography" element={<DanceCompetitionProject navigate={(path) => navigate(`/${path}`)} />} />
+          <Route path="/project/usability-lab-documentation" element={<UsabilityLabProject navigate={(path) => navigate(`/${path}`)} />} />
           <Route path="/project/:projectId" element={<ProjectRoute navigate={(path) => navigate(`/${path}`)} />} />
         </Routes>
       </main>
