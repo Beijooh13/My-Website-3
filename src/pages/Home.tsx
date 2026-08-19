@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 import photoBL from '@/imports/11032021_Photos_BL.jpg'
 import mainPage from '@/imports/Main Page.jpg'
-import hw2 from '@/imports/Holiday_World_2.jpg'
+import lipcoCover from '@/imports/Holiday_World_Hatch_Red.jpg'
 import branson3 from '@/imports/Port_2025_Branson3.jpg'
 import photoD from '@/imports/02122021_D.jpg'
 import codeGreen from '@/imports/1.jpg'
@@ -37,7 +37,7 @@ export default function Home({ navigate }: HomeProps) {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
         <div className="md:col-span-7 img-zoom cursor-pointer" onClick={()=>navigate('project','code-green')}><div className="relative aspect-[4/5] md:h-[680px] md:aspect-auto"><img src={codeGreen} className="w-full h-full object-cover" alt="Code Green"/><div className="absolute bottom-0 p-8 text-white"><p className="text-[10px] tracking-[.2em] uppercase mb-2">Research · UX/UI · 2025</p><h3 className="text-3xl" style={{fontFamily:'var(--font-display)'}}>Code Green <em>IDE Extension</em></h3></div></div></div>
         <div className="md:col-span-5 flex flex-col gap-4"><div className="img-zoom cursor-pointer flex-1" onClick={()=>navigate('project','portrait-photography')}><div className="relative h-[320px] md:h-full"><img src={photoD} className="w-full h-full object-cover object-top" alt="Seoul Portrait Series"/><div className="absolute bottom-0 p-6 text-white"><p className="text-[10px] tracking-[.2em] uppercase mb-1">Photography · 2021–2022</p><h3 className="text-2xl" style={{fontFamily:'var(--font-display)'}}>Seoul Portrait Series</h3></div></div></div><div className="img-zoom cursor-pointer" onClick={()=>navigate('project','branson-magazine')}><div className="relative h-[280px]"><img src={branson3} className="w-full h-full object-cover" alt="Explore Branson"/><div className="absolute bottom-0 p-6 text-white"><p className="text-[10px] tracking-[.2em] uppercase mb-1">Editorial · Print · 2024</p><h3 className="text-2xl" style={{fontFamily:'var(--font-display)'}}>Explore Branson Campaign</h3></div></div></div></div>
-        <div className="md:col-span-12 img-zoom cursor-pointer" onClick={()=>navigate('project','holiday-world')}><div className="relative h-[300px]"><img src={hw2} className="w-full h-full object-cover object-center" alt="LIPCO Group souvenir shirt design"/><div className="absolute bottom-0 p-8 text-white"><p className="text-[10px] tracking-[.2em] uppercase mb-2">Souvenir Design · Kirbyville, Missouri · 2024</p><h3 className="text-3xl" style={{fontFamily:'var(--font-display)'}}>LIPCO Group · <em>Souvenir Product Design</em></h3></div></div></div>
+        <div className="md:col-span-12 img-zoom cursor-pointer" onClick={()=>navigate('project','holiday-world')}><div className="relative h-[300px]"><img src={lipcoCover} className="w-full h-full object-cover object-center" alt="LIPCO Group souvenir design work"/><div className="absolute bottom-0 p-8 text-white"><p className="text-[10px] tracking-[.2em] uppercase mb-2">Souvenir Design · Kirbyville, Missouri · 2024</p><h3 className="text-3xl" style={{fontFamily:'var(--font-display)'}}>LIPCO Group · <em>Souvenir Product Design</em></h3></div></div></div>
       </div>
     </div></section>
 
