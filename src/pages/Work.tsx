@@ -11,6 +11,7 @@ import astaThumb from '@/imports/Summer_Thrift-03.jpg'
 import zamoraSocial from '@/imports/484443753_953244013662362_2822451351378166629_n.jpg'
 import podcast from '@/imports/Diogo_Podcast_Event_20.jpg'
 import danceThumb from '@/imports/ 2024_Heat Photography_005.jpg'
+import labThumb from '@/imports/ Robotic Chess_Lab_001.jpg'
 
 interface WorkProps {
   navigate: (page: string, project?: string) => void
@@ -35,6 +36,14 @@ const projects: Project[] = [
     category: 'Photography',
     localImg: 'danceThumb',
     size: 'wide',
+  },
+  {
+    id: 'usability-lab-documentation',
+    title: 'HSRW Usability Lab — Project Documentation',
+    year: '2026',
+    category: 'Photography',
+    localImg: 'labThumb',
+    size: 'tall',
   },
   {
     id: 'holiday-world',
@@ -118,12 +127,11 @@ const projects: Project[] = [
   },
 ]
 
-const localImgMap: Record<string, string> = { hw1, portraitD, branson3, codeGreen, essentia, perfume, landscape, zamoraSocial, podcast, astaThumb, danceThumb }
+const localImgMap: Record<string, string> = { hw1, portraitD, branson3, codeGreen, essentia, perfume, landscape, zamoraSocial, podcast, astaThumb, danceThumb, labThumb }
 
 export default function Work({ navigate: _legacyNavigate }: WorkProps) {
   const [activeCategory, setActiveCategory] = useState('All')
   const routerNavigate = useNavigate()
-
   const filtered = activeCategory === 'All' ? projects : projects.filter((p) => p.category === activeCategory)
 
   return (
