@@ -18,9 +18,9 @@ export default function Home({ navigate }: HomeProps) {
   return <div className="page-enter">
     <section className="relative w-full h-screen overflow-hidden" style={{backgroundColor:'var(--color-ink)'}}>
       <div ref={heroRef} className="absolute inset-0 w-full h-[115%] -top-[7%]"><img src={photoBL} alt="Street photography — Seoul" className="w-full h-full object-cover object-center" style={{filter:'brightness(.64)'}}/></div>
-      <div className="absolute inset-0 flex flex-col justify-end pb-20 px-8 md:px-16"><div className="max-w-5xl">
+      <div className="absolute inset-0 flex flex-col justify-end pb-20 px-8 md:px-16"><div className="max-w-6xl">
         <p className="text-xs tracking-[.2em] uppercase mb-6 text-white/60">Graphic Design · Photography · UX · Experience Design</p>
-        <h1 className="text-white text-6xl md:text-8xl lg:text-[7rem] leading-[1.08] mb-8" style={{fontFamily:'var(--font-display)',fontWeight:520}}>I want to make<br/><em style={{fontWeight:330}}>experiences better.</em></h1>
+        <h1 className="text-white text-6xl md:text-8xl lg:text-[7rem] leading-[1.08] mb-8" style={{fontFamily:'var(--font-display)',fontWeight:520}}>Making experiences more<br/><em style={{fontWeight:330}}>thoughtful, visual, and human.</em></h1>
         <button onClick={()=>navigate('work')} className="accent-button">View work <span aria-hidden="true">↗</span></button>
       </div></div>
     </section>
