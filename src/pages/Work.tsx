@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import lipcoThumb from '@/imports/Holiday_World_Hatch_Red.jpg'
-import portraitD from '@/imports/ Seoul Photography_00005.jpg'
+import portraitD from '@/imports/Seoul Photography_00005.jpg'
 import branson3 from '@/imports/Port_2025_Branson3.jpg'
 import codeGreen from '@/imports/1.jpg'
 import essentia from '@/imports/0_Cover.jpg'
