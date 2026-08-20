@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import hw1 from '@/imports/Holiday_World_1.jpg'
+import lipcoThumb from '@/imports/Holiday_World_Hatch_Red.jpg'
 import portraitD from '@/imports/02122021_D.jpg'
 import branson3 from '@/imports/Port_2025_Branson3.jpg'
 import codeGreen from '@/imports/1.jpg'
@@ -18,15 +18,17 @@ import lunitThumb from '@/imports/Lunit9_15.jpg'
 import cyconThumb from '@/imports/CyconWP_Port_2025.jpg'
 import suitmakeThumb from '@/imports/ Suitmake Product Photography_005.jpg'
 import ngaThumb from '@/imports/ Nga Photography_001.jpg'
+import realEstateThumb from '@/imports/ Real Estate Photography_006.jpg'
 
 interface WorkProps { navigate: (page: string, project?: string) => void }
 const categories = ['All', 'Photography', 'Graphic Design', 'Editorial', 'Objects', 'Research / UX', 'UX/UI', 'Experience Design']
 interface Project { id: string; title: string; year: string; category: string; localImg: string; size: 'tall' | 'wide' | 'square' }
 const projects: Project[] = [
   { id: 'dance-competition-photography', title: 'Dance Competition Photography', year: '2022–2024', category: 'Photography', localImg: 'danceThumb', size: 'wide' },
+  { id: 'real-estate-photography', title: 'Real Estate Photography — Selected Work', year: 'Selected Work', category: 'Photography', localImg: 'realEstateThumb', size: 'wide' },
   { id: 'usability-lab-documentation', title: 'HSRW Usability Lab — Project Documentation', year: '2026', category: 'Photography', localImg: 'labThumb', size: 'tall' },
   { id: 'klingerhuf-restoration', title: 'Klingerhuf Restoration — Community Participation', year: '2026', category: 'Graphic Design', localImg: 'klingerThumb', size: 'wide' },
-  { id: 'lipco-souvenir-design', title: 'Lipco Group — Souvenir Product Design', year: '2024', category: 'Objects', localImg: 'hw1', size: 'wide' },
+  { id: 'lipco-souvenir-design', title: 'Lipco Group — Souvenir Product Design', year: '2024', category: 'Objects', localImg: 'lipcoThumb', size: 'wide' },
   { id: 'nga-fashion-photography', title: 'Nga — Fashion Photography', year: '2022', category: 'Photography', localImg: 'ngaThumb', size: 'tall' },
   { id: 'rvn-fashion-photography', title: 'RVN — Fashion Photography', year: 'c. 2020', category: 'Photography', localImg: 'rvnThumb', size: 'tall' },
   { id: 'lunit-ui-study', title: 'Lunit — Experimental UI Design Study', year: 'c. 2020', category: 'UX/UI', localImg: 'lunitThumb', size: 'wide' },
@@ -42,7 +44,7 @@ const projects: Project[] = [
   { id: 'podcast-event', title: 'Diogo Podcast — Event Photography', year: '2025', category: 'Photography', localImg: 'podcast', size: 'wide' },
   { id: 'asta-graphics', title: 'AStA HSRW — Visual Communication & Student Initiatives', year: '2025–2026', category: 'Graphic Design', localImg: 'astaThumb', size: 'tall' },
 ]
-const localImgMap: Record<string, string> = { hw1, portraitD, branson3, codeGreen, essentia, perfume, landscape, zamoraSocial, podcast, astaThumb, danceThumb, labThumb, klingerThumb, rvnThumb, lunitThumb, cyconThumb, suitmakeThumb, ngaThumb }
+const localImgMap: Record<string, string> = { lipcoThumb, portraitD, branson3, codeGreen, essentia, perfume, landscape, zamoraSocial, podcast, astaThumb, danceThumb, labThumb, klingerThumb, rvnThumb, lunitThumb, cyconThumb, suitmakeThumb, ngaThumb, realEstateThumb }
 export default function Work({ navigate: _legacyNavigate }: WorkProps) {
   const [activeCategory, setActiveCategory] = useState('All')
   const routerNavigate = useNavigate()
