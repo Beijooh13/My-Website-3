@@ -264,15 +264,7 @@ export default function PortraitProject({ navigate }: Props) {
       </section>
 
       <section className="py-20 px-8 md:px-16">
-        <div className="max-w-screen-xl mx-auto pt-12 border-t flex flex-col md:flex-row items-start md:items-center justify-between gap-8" style={{ borderColor: 'var(--color-border)' }}>
-          <div>
-            <p className="text-[10px] tracking-[0.2em] uppercase mb-2" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>
-              Next project
-            </p>
-            <h4 className="text-3xl" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-ink)' }}>
-              Holiday World — Apparel
-            </h4>
-          </div>
+        <div className="max-w-screen-xl mx-auto pt-12 border-t flex justify-end" style={{ borderColor: 'var(--color-border)' }}>
           <button
             onClick={() => navigate('work')}
             className="group flex items-center gap-3 text-sm tracking-[0.12em] uppercase"
