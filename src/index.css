@@ -10,8 +10,8 @@
   --color-border: #c4c9cd;
   --color-muted: #697078;
   --color-sand: #9da4aa;
-  --color-accent: #174b4b;
-  --color-accent-hover: #0f3d3d;
+  --color-accent: #033a37;
+  --color-accent-hover: #022e2c;
 }
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-body); background-color: var(--color-paper); color: var(--color-ink); -webkit-font-smoothing: antialiased; }
