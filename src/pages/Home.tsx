@@ -26,10 +26,7 @@ export default function Home({ navigate }: HomeProps) {
     </section>
 
     <section className="relative w-full overflow-hidden" style={{backgroundColor:'var(--color-ink)'}}>
-      <img src={mainPage} alt="Selected visual work by Andrea Polk" className="w-full h-auto block"/>
-      <div className="absolute top-0 left-0 right-0 flex justify-between p-5 md:p-8 text-white mix-blend-difference">
-        <p className="text-[10px] md:text-xs tracking-[.2em] uppercase">Selected visual work</p><p className="hidden md:block text-[10px] tracking-[.2em] uppercase">Andrea Polk · Visual practice</p>
-      </div>
+      <img src={mainPage} alt="Visual work by Andrea Polk" className="w-full h-auto block"/>
     </section>
 
     <section className="py-28 px-8 md:px-16"><div className="max-w-screen-xl mx-auto">
