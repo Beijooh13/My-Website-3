@@ -6,7 +6,6 @@ const services = [
   'UI/UX Design & Usability Research',
   'Graphic Design & Visual Identity',
   'Photography & Art Direction',
-  'Apparel & Merchandise Graphics',
   'Editorial & Publication Design',
   'Experience Design',
   'Content Strategy',
@@ -15,7 +14,7 @@ const services = [
 const interests = [
   'Usability engineering and how people experience systems, spaces, and services',
   'Photography as a tool for understanding culture and place',
-  'The graphic language of wearable design — what makes a shirt feel like it belongs',
+  'Visual storytelling across photography, design, and content',
   'Swiss editorial typography and how hierarchy communicates before words do',
   'Travel as research — collecting visual references across cultures',
   'Reading: currently Dieter Rams, Don Norman, and Luigi Ghirri',
@@ -60,7 +59,7 @@ export default function About({ navigate }: AboutProps) {
               Andrea Polk is a multidisciplinary designer with a passion for connecting creative disciplines — photography, graphic design, and UX thinking — to produce work that is functional, striking, and human-centered.
             </p>
             <p className="text-base leading-relaxed" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>
-              Her background spans graphic design, content creation, and photography, building a broad skill set that resists the boundaries between disciplines. The practice operates at the intersection of apparel design, editorial work, and experience design.
+              Her background spans graphic design, content creation, and photography, building a broad skill set across visual communication, editorial work, and experience design.
             </p>
             <p className="text-base leading-relaxed" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>
               Andrea is currently completing a Master's degree in Usability Engineering (M.Sc.) at Hochschule Rhein-Waal University in Germany — deepening her understanding of how people experience systems, spaces, and services at a research level.
