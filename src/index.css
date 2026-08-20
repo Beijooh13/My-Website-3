@@ -10,6 +10,8 @@
   --color-border: #c4c9cd;
   --color-muted: #697078;
   --color-sand: #9da4aa;
+  --color-accent: #a9c96f;
+  --color-accent-hover: #bad984;
 }
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-body); background-color: var(--color-paper); color: var(--color-ink); -webkit-font-smoothing: antialiased; }
@@ -28,3 +30,5 @@ body { font-family: var(--font-body); background-color: var(--color-paper); colo
 .link-underline { position:relative;display:inline-block; }
 .link-underline::after { content:'';position:absolute;bottom:-1px;left:0;width:0;height:1px;background:currentColor;transition:width .3s ease; }
 .link-underline:hover::after { width:100%; }
+.accent-button { display:inline-flex;align-items:center;justify-content:center;gap:.65rem;padding:.75rem 1.35rem;border-radius:999px;background:var(--color-accent);color:var(--color-ink);font-family:var(--font-body);font-size:.875rem;line-height:1;transition:background-color .25s ease,transform .25s ease; }
+.accent-button:hover { background:var(--color-accent-hover);transform:translateY(-2px); }
