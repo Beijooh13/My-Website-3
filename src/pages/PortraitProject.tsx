@@ -3,18 +3,25 @@ import photoJ from '@/imports/02122021_J.jpg'
 import photoDaerim from '@/imports/01292022_Daerim_ES.jpg'
 import photoBL from '@/imports/11032021_Photos_BL.jpg'
 import photoReflect from '@/imports/06062022_Sangsu_0048.jpg'
-import photoSangsu1 from '@/imports/06062022_Sangsu_0093.jpg'
-import photoSangsu2 from '@/imports/06062022_Sangsu_0114.jpg'
+import seoul1 from '@/imports/Seoul Photography_00001.jpg'
+import seoul2 from '@/imports/Seoul Photography_00002.jpg'
+import seoul3 from '@/imports/Seoul Photography_00003.jpg'
+import seoul4 from '@/imports/Seoul Photography_00004.jpg'
+import seoul5 from '@/imports/Seoul Photography_00005.jpg'
+import seoul6 from '@/imports/Seoul Photography_00006.jpg'
+import seoul7 from '@/imports/Seoul Photography_00007.jpg'
+import seoul8 from '@/imports/Seoul Photography_00008.jpg'
+import seoul9 from '@/imports/Seoul Photography_00009.jpg'
 
 interface Props {
   navigate: (page: string) => void
 }
 
 export default function PortraitProject({ navigate }: Props) {
+  const additionalSeoul = [seoul1, seoul3, seoul5, seoul6, seoul7, seoul8, seoul9]
+
   return (
     <article className="page-enter">
-
-      {/* Hero — full screen, the cinematic black coat crossing */}
       <div className="relative w-full overflow-hidden" style={{ height: '100vh', backgroundColor: '#111' }}>
         <img
           src={photoBL}
@@ -39,7 +46,6 @@ export default function PortraitProject({ navigate }: Props) {
         </div>
       </div>
 
-      {/* Project overview */}
       <section className="py-28 px-8 md:px-16">
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-16">
           <div className="md:col-span-4">
@@ -79,7 +85,6 @@ export default function PortraitProject({ navigate }: Props) {
         </div>
       </section>
 
-      {/* ── CHAPTER 1: Studio Portraits ── */}
       <section className="py-10 px-8 md:px-16" style={{ backgroundColor: 'var(--color-paper-dark)' }}>
         <div className="max-w-screen-xl mx-auto mb-12">
           <div className="flex items-baseline gap-6">
@@ -96,31 +101,19 @@ export default function PortraitProject({ navigate }: Props) {
           </div>
         </div>
 
-        {/* Two portraits — the drama is in the contrast between them */}
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
-          {/* D — closer, direct gaze, natural lip */}
           <div className="img-zoom" style={{ backgroundColor: '#c8c4c0' }}>
             <div className="aspect-[2/3]">
-              <img
-                src={photoD}
-                alt="Studio portrait — direct gaze, natural, gray background"
-                className="w-full h-full object-cover object-top"
-              />
+              <img src={photoD} alt="Studio portrait — direct gaze, natural, gray background" className="w-full h-full object-cover object-top" />
             </div>
           </div>
-          {/* J — profile, red lip, more shadow */}
           <div className="img-zoom" style={{ backgroundColor: '#b8b4b0' }}>
             <div className="aspect-[2/3]">
-              <img
-                src={photoJ}
-                alt="Studio portrait — three-quarter profile, red lip, gray background"
-                className="w-full h-full object-cover object-top"
-              />
+              <img src={photoJ} alt="Studio portrait — three-quarter profile, red lip, gray background" className="w-full h-full object-cover object-top" />
             </div>
           </div>
         </div>
 
-        {/* Caption */}
         <div className="max-w-screen-xl mx-auto mt-8 grid grid-cols-1 md:grid-cols-2 gap-4 pb-20">
           <p className="text-xs leading-relaxed" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>
             Same subject, same session, same gray ground — two entirely different people. The studio removes context so the face carries everything.
@@ -131,7 +124,6 @@ export default function PortraitProject({ navigate }: Props) {
         </div>
       </section>
 
-      {/* ── Statement quote — dark ── */}
       <section className="py-24 px-8 md:px-16" style={{ backgroundColor: 'var(--color-ink)' }}>
         <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
           <div className="md:col-span-3">
@@ -147,8 +139,6 @@ export default function PortraitProject({ navigate }: Props) {
         </div>
       </section>
 
-      {/* ── CHAPTER 2: Seoul Streets ── */}
-      {/* BL — cinematic crossing — full width */}
       <div className="w-full" style={{ backgroundColor: '#1a1a1a', maxHeight: '75vh', overflow: 'hidden' }}>
         <img
           src={photoBL}
@@ -171,7 +161,6 @@ export default function PortraitProject({ navigate }: Props) {
             Nov 2021 – Jun 2022
           </span>
         </div>
-
         <div className="max-w-screen-xl mx-auto mt-6 pb-20">
           <p className="text-base leading-relaxed text-white/50 max-w-xl" style={{ fontFamily: 'var(--font-body)' }}>
             Moving through Daerim and Sangsu — two neighbourhoods in Seoul with entirely different energies. The camera became a way of paying attention to both.
@@ -179,7 +168,6 @@ export default function PortraitProject({ navigate }: Props) {
         </div>
       </section>
 
-      {/* Daerim portrait — half and half with text */}
       <section className="grid grid-cols-1 md:grid-cols-2" style={{ backgroundColor: '#1a1a1a' }}>
         <div className="img-zoom" style={{ backgroundColor: '#2a2420' }}>
           <img
@@ -202,7 +190,6 @@ export default function PortraitProject({ navigate }: Props) {
         </div>
       </section>
 
-      {/* Reflection — full bleed, golden */}
       <div className="relative w-full" style={{ backgroundColor: '#2d2518' }}>
         <img
           src={photoReflect}
@@ -220,32 +207,19 @@ export default function PortraitProject({ navigate }: Props) {
         </div>
       </div>
 
-      {/* Sangsu pair — two wide shots side by side */}
       <section className="py-4 px-4" style={{ backgroundColor: 'var(--color-paper)' }}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          {/* Street portrait — man with hand gesture */}
           <div className="img-zoom" style={{ backgroundColor: 'var(--color-paper-dark)' }}>
             <div className="aspect-[3/2]">
-              <img
-                src={photoSangsu1}
-                alt="Street portrait — Sangsu neighbourhood, Seoul, June 2022"
-                className="w-full h-full object-cover"
-              />
+              <img src={seoul2} alt="Street portrait — Sangsu neighbourhood, Seoul, June 2022" className="w-full h-full object-cover" />
             </div>
           </div>
-          {/* Skateboard */}
           <div className="img-zoom" style={{ backgroundColor: 'var(--color-paper-dark)' }}>
             <div className="aspect-[3/2]">
-              <img
-                src={photoSangsu2}
-                alt="Skateboarding on a Seoul street — Sangsu, June 2022"
-                className="w-full h-full object-cover"
-              />
+              <img src={seoul4} alt="Skateboarding on a Seoul street — Sangsu, June 2022" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
-
-        {/* Caption row */}
         <div className="max-w-screen-xl mx-auto mt-6 mb-4 grid grid-cols-1 md:grid-cols-2 gap-4 px-4">
           <div>
             <p className="text-[10px] tracking-[0.2em] uppercase mb-1" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>
@@ -266,7 +240,29 @@ export default function PortraitProject({ navigate }: Props) {
         </div>
       </section>
 
-      {/* Nav footer */}
+      <section className="py-20 px-4 md:px-8" style={{ backgroundColor: 'var(--color-paper-dark)' }}>
+        <div className="max-w-screen-xl mx-auto mb-10 px-4">
+          <p className="text-[10px] tracking-[0.3em] uppercase mb-3" style={{ fontFamily: 'var(--font-body)', color: 'var(--color-muted)' }}>
+            More from Seoul
+          </p>
+          <h3 className="text-3xl md:text-4xl" style={{ fontFamily: 'var(--font-display)', color: 'var(--color-ink)' }}>
+            Portraits, movement & everyday moments
+          </h3>
+        </div>
+        <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+          {additionalSeoul.map((photo, index) => (
+            <div key={index} className={`img-zoom ${index === 0 || index === 5 ? 'md:col-span-2' : ''}`} style={{ backgroundColor: 'var(--color-paper)' }}>
+              <img
+                src={photo}
+                alt={`Seoul photography ${index + 1}`}
+                className="w-full h-full object-cover"
+                style={{ maxHeight: index === 0 || index === 5 ? '82vh' : '68vh' }}
+              />
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="py-20 px-8 md:px-16">
         <div className="max-w-screen-xl mx-auto pt-12 border-t flex flex-col md:flex-row items-start md:items-center justify-between gap-8" style={{ borderColor: 'var(--color-border)' }}>
           <div>
