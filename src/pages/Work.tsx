@@ -39,7 +39,7 @@ const projects: Project[] = [
   { id: 'portrait-photography', title: 'Portrait & Street Photography', year: '2021–2022', category: 'Photography', localImg: 'portraitD', size: 'tall' },
   { id: 'essentia', title: 'Essentia Olfactory Display', year: '2024', category: 'UX/UI', localImg: 'essentia', size: 'wide' },
   { id: 'perfume-events', title: 'Perfume Workshops — AStA HSRW', year: '2026', category: 'Experience Design', localImg: 'perfume', size: 'tall' },
-  { id: 'landscape-photography', title: 'Green Oasis — Landscape Photography', year: '2023–2024', category: 'Photography', localImg: 'landscape', size: 'wide' },
+  { id: 'landscape-photography', title: 'Green Oasis — Landscape Photography', year: 'c. 2020', category: 'Photography', localImg: 'landscape', size: 'wide' },
   { id: 'zamora-real-estate', title: 'Zamora Real Estate — Photography & Marketing', year: '2023–2024', category: 'Photography', localImg: 'zamoraSocial', size: 'tall' },
   { id: 'podcast-event', title: 'Diogo Podcast — Event Photography', year: '2025', category: 'Photography', localImg: 'podcast', size: 'wide' },
   { id: 'asta-graphics', title: 'AStA HSRW — Visual Communication & Student Initiatives', year: '2025–2026', category: 'Graphic Design', localImg: 'astaThumb', size: 'tall' },
