@@ -6,6 +6,7 @@ import Project from './pages/Project'
 import About from './pages/About'
 import Journal from './pages/Journal'
 import Contact from './pages/Contact'
+import PhotographyPortfolio from './pages/PhotographyPortfolio'
 import DanceCompetitionProject from './pages/DanceCompetitionProject'
 import UsabilityLabProject from './pages/UsabilityLabProject'
 import KlingerhufProject from './pages/KlingerhufProject'
@@ -50,6 +51,7 @@ function Site() {
       <Route path="/about" element={<About navigate={(path) => navigate(`/${path}`)} />} />
       <Route path="/journal" element={<Journal />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/photography" element={<PhotographyPortfolio />} />
       <Route path="/project/dance-competition-photography" element={<DanceCompetitionProject navigate={(path) => navigate(`/${path}`)} />} />
       <Route path="/project/usability-lab-documentation" element={<UsabilityLabProject navigate={(path) => navigate(`/${path}`)} />} />
       <Route path="/project/klingerhuf-restoration" element={<KlingerhufProject navigate={(path) => navigate(`/${path}`)} />} />
