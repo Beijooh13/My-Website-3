@@ -15,9 +15,6 @@ const interests = [
   'Usability engineering and how people experience systems, spaces, and services',
   'Photography as a tool for understanding culture and place',
   'Visual storytelling across photography, design, and content',
-  'Swiss editorial typography and how hierarchy communicates before words do',
-  'Travel as research — collecting visual references across cultures',
-  'Reading: currently Dieter Rams, Don Norman, and Luigi Ghirri',
 ]
 
 export default function About({ navigate }: AboutProps) {
