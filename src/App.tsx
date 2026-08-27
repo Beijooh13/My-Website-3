@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { BrowserRouter, Routes, Route, useNavigate, useLocation, useParams } from 'react-router-dom'
+import { Analytics } from '@vercel/analytics/react'
 import Home from './pages/Home'
 import Work from './pages/Work'
 import Project from './pages/Project'
@@ -66,4 +67,4 @@ function Site() {
   </div>
 }
 
-export default function App(){ return <BrowserRouter><Site /></BrowserRouter> }
+export default function App(){ return <BrowserRouter><Site /><Analytics /></BrowserRouter> }
